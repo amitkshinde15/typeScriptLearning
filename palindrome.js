@@ -37,19 +37,26 @@ let a = [10,15,10,22,21,10,15];
 let occurance = {};
 for (const i of a) {
         if(i in occurance){
-        occurance[i]= occurance[i]+1;
+        occurance[i]=occurance[i] +1;
+        
         }
     else{
         occurance[i]=1;
     }
 }
 console.log(occurance);
-for (const key in occurance) {
-    // if (Object.hasOwnProperty.call(occurance, key)) {
-    //     const element = occurance[key];
-    //     console.log(`Occurance of number ${key} = ${element}`);
-        // }
-        console.log(key , occurance[key]);
-    }
+// for (const key in occurance) {
+//     // if (Object.hasOwnProperty.call(occurance, key)) {
+//     //     const element = occurance[key];
+//     //     console.log(`Occurance of number ${key} = ${element}`);
+//         // }
+//         console.log(key , occurance[key]);
+//     }
+
+
+// let num = 5.55;
+// console.log(Math.floor(num));
+// console.log(Math.round(num));
+
 
 

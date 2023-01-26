@@ -8,7 +8,7 @@ function formatCommandLine(input) {
         line = input.trim();
     }
     else {
-        line = input.map(function (x) { return x.trim(); }).join(' ');
+        line = input.map(function (x) { return x.trim().join(' '); });
     }
     return line;
 }
@@ -18,7 +18,6 @@ console.log(formatCommandLine(['hello ', 'world '])); // helloword
 var Person1 = /** @class */ (function () {
     //public fname: string;
     //public age: number;
-    // parameterised constructor .
     function Person1(fname, age) {
         this.fname = fname;
         this.age = age;
