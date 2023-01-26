@@ -6,8 +6,8 @@
 //     else
 //     console.log(`Given string "${value}" is not palindrom`);
 // }
-// isPalindome("madam");  
-// isPalindome("madan");  
+// isPalindome("madam");
+// isPalindome("madan");
 
 // const person = {
 //     first_name : 'Akshay',
@@ -26,25 +26,24 @@
 // let [fruits1, fruits2] = fruits;
 // console.log(fruits1, fruits2);
 
-
 // let a = [12,15,17,12,15];
 // let b = a.filter((value, index)=>{
 //     return a.indexOf(value) == index;
 // });
 // console.log(b);
 
-let a = [10,15,10,22,21,10,15];
-let occurance = {};
-for (const i of a) {
-        if(i in occurance){
-        occurance[i]=occurance[i] +1;
-        
-        }
-    else{
-        occurance[i]=1;
-    }
-}
-console.log(occurance);
+// let a = [10,15,10,22,21,10,15];
+// let occurance = {};
+// for (const i of a) {
+//         if(i in occurance){
+//         occurance[i]++;
+
+//         }
+//     else{
+//         occurance[i]=1;
+//     }
+// }
+// console.log(occurance);
 // for (const key in occurance) {
 //     // if (Object.hasOwnProperty.call(occurance, key)) {
 //     //     const element = occurance[key];
@@ -53,10 +52,39 @@ console.log(occurance);
 //         console.log(key , occurance[key]);
 //     }
 
-
 // let num = 5.55;
 // console.log(Math.floor(num));
 // console.log(Math.round(num));
 
+// Occurance of letter
 
+// let str='abcadbacdb'
 
+//           var obj = {};
+//           for (let i = 0; i < str.length; i++) {
+//             if (obj[str[i]]) {
+//               obj[str[i]] ++;
+//             } else {
+//               obj[str[i]] = 1;
+//             }
+//           }
+//           console.log(obj); // {a:3,b :3,c:2,d:2}
+
+const response = {
+  maran: {
+    count: 1,
+  },
+  gas: {
+    count: 2,
+  },
+  prelude: {
+    count: 5,
+  },
+  keys: ["maran", "gas", "prelude"],
+};
+let sum = 0;
+
+for (const i of response.keys) {
+   sum = sum + response[i].count;
+}
+console.log(sum);
