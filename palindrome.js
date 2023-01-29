@@ -70,6 +70,7 @@
 //           }
 //           console.log(obj); // {a:3,b :3,c:2,d:2}
 
+
 const response = {
   maran: {
     count: 1,
@@ -80,11 +81,23 @@ const response = {
   prelude: {
     count: 5,
   },
-  keys: ["maran", "gas", "prelude"],
+  keys: ['maran', 'gas', 'prelude'],
 };
-let sum = 0;
 
-for (const i of response.keys) {
-   sum = sum + response[i].count;
+let sum = 0;
+for (const key in response) {
+  if (Object.hasOwnProperty.call(response, key)) {
+    const element = response[key];
+    if(typeof element.count == "number"){
+    sum = sum + element.count;
+    }
+  }
 }
 console.log(sum);
+
+let num = 0;
+for (const key of response.keys) {
+  num = num + response[key].count;
+}
+console.log(num);
+
