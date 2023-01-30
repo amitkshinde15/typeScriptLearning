@@ -36,7 +36,7 @@
 // let occurance = {};
 // for (const i of a) {
 //         if(i in occurance){
-//         occurance[i]++;
+//           occurance[i]++;
 
 //         }
 //     else{
@@ -58,46 +58,54 @@
 
 // Occurance of letter
 
-// let str='abcadbacdb'
+let str='abcadbacdb'
 
-//           var obj = {};
-//           for (let i = 0; i < str.length; i++) {
-//             if (obj[str[i]]) {
-//               obj[str[i]] ++;
-//             } else {
-//               obj[str[i]] = 1;
-//             }
-//           }
-//           console.log(obj); // {a:3,b :3,c:2,d:2}
+          var obj = {};
+          for (let i = 0; i < str.length; i++) {
+            if (str[i] in obj) {
+             // obj[str[i]]= obj[str[i]]+1;
+              obj[str[i]] ++;
+            } else {
+              obj[str[i]] = 1;
+            }
+          }
+          console.log(obj); // {a:3,b :3,c:2,d:2}
+
+// const response = {
+//   maran: {
+//     count: 1,
+//   },
+//   gas: {
+//     count: 2,
+//   },
+//   prelude: {
+//     count: 5,
+//   },
+//   keys: ['maran', 'gas', 'prelude'],
+// };
+
+// let sum = 0;
+// for (const key in response) {
+//   if (Object.hasOwnProperty.call(response, key)) {
+//     const element = response[key];
+//     if(typeof element.count == "number"){
+//     sum = sum + element.count;
+//     }
+//   }
+// }
+// console.log(sum);
+
+// let num = 0;
+// for (const key of response.keys) {
+//   num = num + response[key].count;
+// }
+// console.log(num);
+
+//const f = [2,10,5,1,0];
+// let a = f.sort((a, b)=>{
+//   return a > b ? 1 : -1;
+// })
+// console.log(a);
 
 
-const response = {
-  maran: {
-    count: 1,
-  },
-  gas: {
-    count: 2,
-  },
-  prelude: {
-    count: 5,
-  },
-  keys: ['maran', 'gas', 'prelude'],
-};
-
-let sum = 0;
-for (const key in response) {
-  if (Object.hasOwnProperty.call(response, key)) {
-    const element = response[key];
-    if(typeof element.count == "number"){
-    sum = sum + element.count;
-    }
-  }
-}
-console.log(sum);
-
-let num = 0;
-for (const key of response.keys) {
-  num = num + response[key].count;
-}
-console.log(num);
 
