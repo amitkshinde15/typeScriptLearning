@@ -58,18 +58,18 @@
 
 // Occurance of letter
 
-let str='abcadbacdb'
+// let str='abcadbacdb'
 
-          var obj = {};
-          for (let i = 0; i < str.length; i++) {
-            if (str[i] in obj) {
-             // obj[str[i]]= obj[str[i]]+1;
-              obj[str[i]] ++;
-            } else {
-              obj[str[i]] = 1;
-            }
-          }
-          console.log(obj); // {a:3,b :3,c:2,d:2}
+//           var obj = {};
+//           for (let i = 0; i < str.length; i++) {
+//             if (str[i] in obj) {
+//              // obj[str[i]]= obj[str[i]]+1;
+//               obj[str[i]] ++;
+//             } else {
+//               obj[str[i]] = 1;
+//             }
+//           }
+//           console.log(obj); // {a:3,b :3,c:2,d:2}
 
 // const response = {
 //   maran: {
@@ -109,3 +109,10 @@ let str='abcadbacdb'
 
 
 
+// const a = [1,1,5,2,1,8];
+// // const b = new Set(a);
+// // console.log(b);
+// const c = a.filter((b,i)=>{
+//    return a.indexOf(b) ==i;
+// });
+// console.log(c);
