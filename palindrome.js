@@ -116,3 +116,8 @@
 //    return a.indexOf(b) ==i;
 // });
 // console.log(c);
+
+
+const arr = ['sachin','mahesh'];
+let[f1,f2,f3='deepak']= arr;
+console.log(f1,f2,f3);
