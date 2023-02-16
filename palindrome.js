@@ -118,6 +118,19 @@
 // console.log(c);
 
 
-const arr = ['sachin','mahesh'];
-let[f1,f2,f3='deepak']= arr;
-console.log(f1,f2,f3);
+// const arr = ['sachin','mahesh'];
+// let[f1,f2,f3='deepak']= arr;
+// console.log(f1,f2,f3);
+
+//Output should be -  'you are how hello'
+let str = 'hello how are you';
+let str1 = str.split(" ");
+let rev = "";
+for(let i=str1.length-1;i>=0;i--){
+    rev = rev+" "+str1[i];
+}
+console.log(rev);
+
+// let str = 'hello how are you';
+// let str1 = str.split(" ").reverse().join(' ');
+// console.log(str1);   
