@@ -123,14 +123,47 @@
 // console.log(f1,f2,f3);
 
 //Output should be -  'you are how hello'
-let str = 'hello how are you';
-let str1 = str.split(" ");
-let rev = "";
-for(let i=str1.length-1;i>=0;i--){
-    rev = rev+" "+str1[i];
-}
-console.log(rev);
+// let str = 'hello how are you';
+// let str1 = str.split(" ");
+// let rev = "";
+// for(let i=str1.length-1;i>=0;i--){
+//     rev = rev+" "+str1[i];
+// }
+// console.log(rev);
 
 // let str = 'hello how are you';
 // let str1 = str.split(" ").reverse().join(' ');
 // console.log(str1);   
+
+
+//output Hi This Is Codemind Technology
+
+let str = "hi this is codemind technology";
+let str1='';
+
+for (let i = 0; i < str.length; i++) {
+  let c = str.charAt(i);
+  if (i == 0) {
+    str1 = str1 + c.toUpperCase();
+  } else if (c == " ") {
+    i = i + 1;
+    c = str.charAt(i);
+    str1 = str1 + " " + c.toUpperCase();
+  } else {
+    str1 = str1 + c.toLowerCase();
+  }
+}
+console.log(str1);
+
+// Second method
+
+// var str1 = "hi this is codemind technology";
+
+//  let splitStr = str1.split(" ")
+
+//  for(i=0; i<splitStr.length; i++){
+
+//     splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].slice(1)
+//  }
+//  let str2 = splitStr.join(" ")
+//  console.log(str2);
