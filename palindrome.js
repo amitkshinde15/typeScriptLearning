@@ -138,22 +138,22 @@
 
 //output Hi This Is Codemind Technology
 
-let str = "hi this is codemind technology";
-let str1='';
+// let str = "hi this is codemind technology";
+// let str1='';
 
-for (let i = 0; i < str.length; i++) {
-  let c = str.charAt(i);
-  if (i == 0) {
-    str1 = str1 + c.toUpperCase();
-  } else if (c == " ") {
-    i = i + 1;
-    c = str.charAt(i);
-    str1 = str1 + " " + c.toUpperCase();
-  } else {
-    str1 = str1 + c.toLowerCase();
-  }
-}
-console.log(str1);
+// for (let i = 0; i < str.length; i++) {
+//   let c = str.charAt(i);
+//   if (i == 0) {
+//     str1 = str1 + c.toUpperCase();
+//   } else if (c == " ") {
+//     i = i + 1;
+//     c = str.charAt(i);
+//     str1 = str1 + " " + c.toUpperCase();
+//   } else {
+//     str1 = str1 + c.toLowerCase();
+//   }
+// }
+// console.log(str1);
 
 // Second method
 
@@ -167,3 +167,12 @@ console.log(str1);
 //  }
 //  let str2 = splitStr.join(" ")
 //  console.log(str2);
+
+
+console.log("start");
+
+setTimeout(function(callback) {
+  console.log("continue");
+},1000);
+
+console.log("End");
